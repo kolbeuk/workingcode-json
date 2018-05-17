@@ -1,0 +1,21 @@
+let address;
+
+let addressdetails = {
+    "first-name": "David",
+    "second-name": "kolb",
+    "address-street": "Hampton",
+    "address-number": 2323,
+    "address-gps": 54.444
+}
+
+let firstdate = new Date(2017,5,10);
+
+let serialaddressdetails = JSON.stringify(addressdetails, null,2);
+console.log(serialaddressdetails);
+console.log("serial JSON " + typeof serialaddressdetails);
+
+
+let serialaddresdate = JSON.stringify(firstdate, null,2);
+console.log(firstdate);
+console.log("serial JSON " + typeof firstdate);
+
